@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #1e3c72,
+    #2a5298
+  ); /* Gradient from dark blue to lighter blue */
+  color: #fff;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e6f1ff; /* Light blueish white */
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  height: 180px;
+  position: relative;
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 128, 0.2); /* Teal with transparency */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.container::before {
+  width: 160px;
+  height: 160px;
+  background: #ff6f61; /* Coral */
+  border-radius: 5px;
+  left: -40px;
+  top: -40px;
+}
+
+.container::after {
+  width: 160px;
+  height: 160px;
+  background: #48cae4; /* Sky Blue */
+  border-radius: 50%;
+  right: -40px;
+  bottom: -40px;
+}
+
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #f0f8ff; /* Alice Blue */
+}
+
+.clock span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+
+#min::after {
+  content: "MINS";
+}
+
+#sec::after {
+  content: "SECS";
+}
+
+.credit {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #b0c4de; /* Light Steel Blue */
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .clock {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .clock span {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .clock span::after {
+    font-size: 14px;
+  }
+
+  .container::before,
+  .container::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container::before {
+    left: -20px;
+    top: -20px;
+  }
+
+  .container::after {
+    right: -20px;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock span {
+    font-size: 50px;
+  }
+
+  .clock span::after {
+    font-size: 12px;
+  }
+
+  .container::before,
+  .container::after {
+    width: 70px;
+    height: 70px;
+  }
+
+  .container::before {
+    left: -15px;
+    top: -15px;
+  }
+
+  .container::after {
+    right: -15px;
+    bottom: -15px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #1e3c72,
+    #2a5298
+  ); /* Gradient from dark blue to lighter blue */
+  color: #fff;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e6f1ff; /* Light blueish white */
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  height: 180px;
+  position: relative;
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 128, 0.2); /* Teal with transparency */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.container::before {
+  width: 160px;
+  height: 160px;
+  background: #ff6f61; /* Coral */
+  border-radius: 5px;
+  left: -40px;
+  top: -40px;
+}
+
+.container::after {
+  width: 160px;
+  height: 160px;
+  background: #48cae4; /* Sky Blue */
+  border-radius: 50%;
+  right: -40px;
+  bottom: -40px;
+}
+
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #f0f8ff; /* Alice Blue */
+}
+
+.clock span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+
+#min::after {
+  content: "MINS";
+}
+
+#sec::after {
+  content: "SECS";
+}
+
+.credit {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #b0c4de; /* Light Steel Blue */
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .clock {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .clock span {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .clock span::after {
+    font-size: 14px;
+  }
+
+  .container::before,
+  .container::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container::before {
+    left: -20px;
+    top: -20px;
+  }
+
+  .container::after {
+    right: -20px;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock span {
+    font-size: 50px;
+  }
+
+  .clock span::after {
+    font-size: 12px;
+  }
+
+  .container::before,
+  .container::after {
+    width: 70px;
+    height: 70px;
+  }
+
+  .container::before {
+    left: -15px;
+    top: -15px;
+  }
+
+  .container::after {
+    right: -15px;
+    bottom: -15px;
+  }
+}
